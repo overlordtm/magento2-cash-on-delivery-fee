@@ -24,7 +24,7 @@ class AddCashOnDeliveryFeeToTotalsBlock
             $subject->addTotalBefore(new DataObject([
                 'code' => CashOnDeliveryFee::TOTAL_CODE,
                 'value' => $fee,
-                'label' => __('Cash on Delivery Fee')
+                'label' => __('Nadomestilo za plačilo po povzetju')
             ]), TotalsInterface::KEY_GRAND_TOTAL);
         }
 
